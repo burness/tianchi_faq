@@ -64,3 +64,10 @@ A规则是用简单的、不精确、自己总结出来的的方法做预测。�
 
 
 ##fork this project and commit a pr, I'll merge it as soon as possible.
+
+
+##Resources
+![ODPS-tutorial-v1.pdf](./resources/ODPS-tutorial-v1.pdf)
+![数加平台OPEN_MR的使用参考.pdf](./resources/数加平台OPEN_MR的使用参考.pdf)
+![ODPS最新SQL参考手册.pdf](./resources/ODPS最新SQL参考手册.pdf)
+![数加-pom.xml](./resources/pom.xml)
