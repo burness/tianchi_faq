@@ -74,12 +74,23 @@
     c   d   4   5   6
     
     groupby + wm_concat 然后拆分字段(注意长度是否一致)
+    
+    
+### Q4:随机森林报错too many class
+分析,可能把播放次数当做类别,random forest 应该无法支持那么多class数,另外天池音乐推荐应该是回归问题,不是分类问题.
+
+### Q5:数加怎么做pivot?原生Hive里面能够直接引用udf
+
+
 
 
 ##fork this project and commit a pr, I'll merge it as soon as possible.
 
 
 ##Resources
+
+**天池大数据比赛交流群: 155167917**
+
 [ODPS-tutorial-v1.pdf](./resources/ODPS-tutorial-v1.pdf)
 
 [数加平台OPEN_MR的使用参考.pdf](./resources/数加平台OPEN_MR的使用参考.pdf)
