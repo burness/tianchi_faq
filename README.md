@@ -57,10 +57,23 @@
     from all_dates_final;
 
 ### Q2:规则是什么？
-A规则是用简单的、不精确、自己总结出来的的方法做预测。比如音乐流行趋势预测中，把七、八月的播放量作为九、十月播放量的预测，又或者是把七八月的均值，作为九、十月的预测。
+规则是用简单的、不精确、自己总结出来的的方法做预测。比如音乐流行趋势预测中，把七、八月的播放量作为九、十月播放量的预测，又或者是把七八月的均值，作为九、十月的预测。
 
 
+### Q3:wm_concat的使用
 
+    a   b   1
+    a   b   2
+    a   b   3
+    c   d   4
+    c   d   5
+    c   d   6
+    
+    变为
+    a   b   1   2   3
+    c   d   4   5   6
+    
+    groupby + wm_concat 然后拆分字段(注意长度是否一致)
 
 
 ##fork this project and commit a pr, I'll merge it as soon as possible.
