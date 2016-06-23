@@ -79,7 +79,23 @@
 ### Q4:随机森林报错too many class
 分析,可能把播放次数当做类别,random forest 应该无法支持那么多class数,另外天池音乐推荐应该是回归问题,不是分类问题.
 
+
 ### Q5:数加怎么做pivot?原生Hive里面能够直接引用udf
+
+
+
+### Q6:最终播放次数有.0如何解决?
+ceil 或者 cast(fieldname as int )
+
+### Q7:回归函数评估函数貌似不可用?
+是的, 如果只是简单的RMSE or RMAE 自己写个sql就好了,下面是我写的部分,之后看看那个比赛的评估指标是否能用sql完成:
+
+    drop table if exists eval;
+    create table eval as select abs(plays_cnt - prediction_score) as x1, pow(plays_cnt - prediction_score, 2) as x2 from result_lr_2;
+    select sum(x1)/6000 as RAME, sum(x2)/600 as RSME from eval;
+    
+### Q8:Xgboost很奇怪,无法调节num_rounds,且最后预测结果每个artist_id每天的播放次数都一样?
+xgboost 回归模块貌似无法更改num_rounds,且播放次数都一样,我这里没有找到为啥,可能是数据的问题?在LR当中最终的预测比较正确.
 
 
 
