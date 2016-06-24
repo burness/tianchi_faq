@@ -99,7 +99,7 @@ xgboost 回归模块貌似无法更改num_rounds,且播放次数都一样,我这
 
 
 
-### 个人生产的表为啥不见了
+### Q9:个人生产的表为啥不见了
 
 ![1](./images/personal_tables.png)
 
