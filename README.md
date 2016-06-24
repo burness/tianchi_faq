@@ -107,6 +107,12 @@ xgboost 回归模块貌似无法更改num_rounds,且播放次数都一样,我这
 ![2](./images/personal_tables2.png)
 
 
+### Q10:mapjoin 下图中这两个一个是join，一个是mapjoin，关键词怎么没变化，求问这个mapjoin怎么用
+
+![3](./images/mapjoin.png)
+注意 那个不是注释 就那样写 就可以调用mapjoin
+
+
 ##fork this project and commit a pr, I'll merge it as soon as possible.
 
 
