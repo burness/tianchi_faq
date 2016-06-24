@@ -99,6 +99,13 @@ xgboost 回归模块貌似无法更改num_rounds,且播放次数都一样,我这
 
 
 
+### 个人生产的表为啥不见了
+
+![1](./images/personal_tables.png)
+
+这里应该是每天更新,但是数据还是在你的项目空间里,如果想看的话 可以到算法平台部分可以看到你生产的数据,如下图:
+![2](./images/personal_tables2.png)
+
 
 ##fork this project and commit a pr, I'll merge it as soon as possible.
 
