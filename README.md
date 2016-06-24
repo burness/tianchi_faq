@@ -113,6 +113,10 @@ xgboost 回归模块貌似无法更改num_rounds,且播放次数都一样,我这
 
 注意 那个不是注释 就那样写 就可以调用mapjoin
 
+### Q11: GBDT输出结果都是NAN如何解决
+解决方法,将图中这个指标改为1,经小伙伴测试有效:
+![4](./images/gbdt_nan.png)
+
 
 ##fork this project and commit a pr, I'll merge it as soon as possible.
 
