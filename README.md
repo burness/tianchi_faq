@@ -117,6 +117,12 @@ xgboost 回归模块貌似无法更改num_rounds,且播放次数都一样,我这
 解决方法,将图中这个指标改为1,经小伙伴测试有效:
 ![4](./images/gbdt_nan.png)
 
+### Q12:GBDT回归时,result没有值,score有值?
+回归模块和分类模块不同,分类模块中prediction_result那列有值,但是回归模块中是没有值的,回归是应该看prediction_score.
+
+### Q13:GBRT在树棵树多余20的时候,预测会有问题,具体问题不知
+如题
+
 
 ##fork this project and commit a pr, I'll merge it as soon as possible.
 
